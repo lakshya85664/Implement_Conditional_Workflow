@@ -1,0 +1,56 @@
+{
+  "project": "Implement Conditional Workflow",
+  "generated_at": "2026-11-18T05:55:42.667625+00:00",
+  "evidence": {
+    "expected_count": 7,
+    "found_count": 7,
+    "valid_json_count": 7,
+    "complete": true,
+    "files": [
+      {
+        "file": "outputs\\task1_workflow_contract.json",
+        "exists": true,
+        "valid_json": true,
+        "error": null
+      },
+      {
+        "file": "outputs\\task2_conditional_workflow.json",
+        "exists": true,
+        "valid_json": true,
+        "error": null
+      },
+      {
+        "file": "outputs\\task3_failure_recovery.json",
+        "exists": true,
+        "valid_json": true,
+        "error": null
+      },
+      {
+        "file": "outputs\\task4_conditional_observability.json",
+        "exists": true,
+        "valid_json": true,
+        "error": null
+      },
+      {
+        "file": "outputs\\task4_conditional_measurements.json",
+        "exists": true,
+        "valid_json": true,
+        "error": null
+      },
+      {
+        "file": "traces\\task3_recovery_trace.json",
+        "exists": true,
+        "valid_json": true,
+        "error": null
+      },
+      {
+        "file": "traces\\task4_conditional_observability.json",
+        "exists": true,
+        "valid_json": true,
+        "error": null
+      }
+    ]
+  },
+  "runbook": "reports\\OPERATOR_RUNBOOK.md",
+  "recommendation": "All expected evidence is present and valid."
+}

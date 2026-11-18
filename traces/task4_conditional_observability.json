@@ -1,0 +1,54 @@
+[
+  {
+    "run_id": "RUN-REFUND-004",
+    "event": "workflow.started",
+    "state": "running",
+    "outcome": "success",
+    "timestamp": 1794980891.6468246,
+    "details": {
+      "refund_id": "REFUND-4001"
+    }
+  },
+  {
+    "run_id": "RUN-REFUND-004",
+    "event": "risk_adapter.completed",
+    "state": "running",
+    "outcome": "success",
+    "timestamp": 1794980891.6468408,
+    "details": {
+      "duration_ms": 0.002,
+      "response": {
+        "risk_score": 0.15,
+        "risk_signals": [],
+        "provider": "fake-risk-service",
+        "api_key": "[REDACTED]"
+      }
+    }
+  },
+  {
+    "run_id": "RUN-REFUND-004",
+    "event": "routing.decided",
+    "state": "running",
+    "outcome": "success",
+    "timestamp": 1794980891.6474545,
+    "details": {
+      "refund_id": "REFUND-4001",
+      "route": "auto_approval",
+      "reason": "Refund is within automatic approval policy",
+      "risk_score": 0.15,
+      "risk_signals": []
+    }
+  },
+  {
+    "run_id": "RUN-REFUND-004",
+    "event": "workflow.finished",
+    "state": "completed",
+    "outcome": "completed",
+    "timestamp": 1794980891.6475124,
+    "details": {
+      "route": "auto_approval",
+      "duration_ms": 1.793,
+      "next_action": "none"
+    }
+  }
+]

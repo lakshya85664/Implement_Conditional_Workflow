@@ -1,0 +1,13 @@
+{
+  "workflow_started": 1,
+  "workflow_completed": 1,
+  "workflow_waiting": 0,
+  "workflow_failed": 0,
+  "adapter_calls": 1,
+  "adapter_failures": 0,
+  "routes": {
+    "auto_approval": 1
+  },
+  "duration_count": 1,
+  "average_duration_ms": 1.793
+}

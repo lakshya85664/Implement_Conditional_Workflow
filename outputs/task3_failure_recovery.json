@@ -1,0 +1,12 @@
+{
+  "result": {
+    "status": "succeeded",
+    "refund_id": "REFUND-1001",
+    "transaction_id": "TX-REFUND-1001",
+    "next_action": "continue_workflow",
+    "attempts": 3
+  },
+  "trace_entries": 6,
+  "gateway_side_effect_count": 1,
+  "trace_file": "traces\\task3_recovery_trace.json"
+}

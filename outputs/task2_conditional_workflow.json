@@ -1,0 +1,35 @@
+{
+  "run_id": "RUN-REFUND-001",
+  "refund_id": "REFUND-1001",
+  "amount": 2500.0,
+  "risk_score": 0.15,
+  "route": "auto_approval",
+  "reason": "Refund is within automatic approval policy",
+  "final_state": "completed",
+  "events": [
+    {
+      "run_id": "RUN-REFUND-001",
+      "event": "routing.decision",
+      "state": "running",
+      "timestamp": "2026-11-18T05:44:54.431957+00:00",
+      "details": {
+        "route": "auto_approval",
+        "reason": "Refund is within automatic approval policy"
+      }
+    },
+    {
+      "run_id": "RUN-REFUND-001",
+      "event": "refund.auto_approved",
+      "state": "running",
+      "timestamp": "2026-11-18T05:44:54.431968+00:00",
+      "details": {}
+    },
+    {
+      "run_id": "RUN-REFUND-001",
+      "event": "complete",
+      "state": "completed",
+      "timestamp": "2026-11-18T05:44:54.431977+00:00",
+      "details": {}
+    }
+  ]
+}

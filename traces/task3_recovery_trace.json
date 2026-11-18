@@ -1,0 +1,62 @@
+[
+  {
+    "run_id": "RUN-REFUND-003",
+    "refund_id": "REFUND-1001",
+    "event": "refund_attempt",
+    "outcome": "started",
+    "attempt": 1,
+    "next_action": "call_gateway",
+    "details": {}
+  },
+  {
+    "run_id": "RUN-REFUND-003",
+    "refund_id": "REFUND-1001",
+    "event": "transient_error",
+    "outcome": "retry_scheduled",
+    "attempt": 1,
+    "next_action": "retry",
+    "details": {
+      "message": "Temporary gateway failure",
+      "backoff_seconds": 0.1
+    }
+  },
+  {
+    "run_id": "RUN-REFUND-003",
+    "refund_id": "REFUND-1001",
+    "event": "refund_attempt",
+    "outcome": "started",
+    "attempt": 2,
+    "next_action": "call_gateway",
+    "details": {}
+  },
+  {
+    "run_id": "RUN-REFUND-003",
+    "refund_id": "REFUND-1001",
+    "event": "timeout",
+    "outcome": "retry_scheduled",
+    "attempt": 2,
+    "next_action": "retry",
+    "details": {
+      "message": "Gateway call timed out",
+      "backoff_seconds": 0.2
+    }
+  },
+  {
+    "run_id": "RUN-REFUND-003",
+    "refund_id": "REFUND-1001",
+    "event": "refund_attempt",
+    "outcome": "started",
+    "attempt": 3,
+    "next_action": "call_gateway",
+    "details": {}
+  },
+  {
+    "run_id": "RUN-REFUND-003",
+    "refund_id": "REFUND-1001",
+    "event": "refund_succeeded",
+    "outcome": "success",
+    "attempt": 3,
+    "next_action": "continue_workflow",
+    "details": {}
+  }
+]
